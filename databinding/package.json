@@ -1,0 +1,19 @@
+{
+  "name": "event-handling",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "dom-delegate": "~0.4.0",
+    "domready": "~0.2.13",
+    "mustache": "~0.8.0",
+    "brfs": "0.0.8",
+    "dope": "~2.2.1",
+    "location-bar": "~1.0.0"
+  }
+}
