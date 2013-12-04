@@ -4,7 +4,6 @@ var domReady = require('domready')
   , fs = require('fs')
   , template = fs.readFileSync(__dirname + '/template.html')
   , Delegate = require('dom-delegate')
-  , dope = require('dope')
 
 domReady(function() {
   var container = document.getElementById('container')
@@ -12,7 +11,6 @@ domReady(function() {
 
   var delegate = new Delegate(container)
   delegate.on('click', '.pony', function(e, r) {
-    console.log(dope.dataset(r).pony)
+    console.log(e, r)
   })
-
 })

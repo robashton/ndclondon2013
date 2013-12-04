@@ -12,7 +12,6 @@
     "dom-delegate": "~0.4.0",
     "domready": "~0.2.13",
     "mustache": "~0.8.0",
-    "brfs": "0.0.8",
-    "dope": "~2.2.1"
+    "brfs": "0.0.8"
   }
 }
