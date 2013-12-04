@@ -14,6 +14,9 @@
     "mustache": "~0.8.0",
     "brfs": "0.0.8",
     "dope": "~2.2.1",
-    "location-bar": "~1.0.0"
+    "location-bar": "~1.0.0",
+    "cheerio": "~0.12.4",
+    "should": "~2.1.0",
+    "coffee-script": "~1.6.3"
   }
 }
