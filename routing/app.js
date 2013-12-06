@@ -13,15 +13,26 @@ domReady(function() {
   var delegate = new Delegate(container)
 
   delegate.on('click', '.pony', function(e, r) {
-    console.log(dope.dataset(r).pony)
+
   })
 
-  document.getElementById('ponies').onclick = function() {
+  var routing = new LocationBar()
 
+  routing.route(/^$/, function() {
+    container.innerHTML = mustache.render(poniesTemplate, data)
+  })
+
+  routing.route(/^unicorns$/, function() {
+    container.innerHTML = mustache.render(unicornTemplate, data)
+  })
+  routing.start({ pushState: true })
+
+  document.getElementById('ponies').onclick = function() {
+    routing.update('/', { trigger: true })
     return false
   }
   document.getElementById('unicorns').onclick = function() {
-
+    routing.update('/unicorns', { trigger: true })
     return false
   }
 })
