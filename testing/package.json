@@ -17,6 +17,7 @@
     "location-bar": "~1.0.0",
     "cheerio": "~0.12.4",
     "should": "~2.1.0",
-    "coffee-script": "~1.6.3"
+    "coffee-script": "~1.6.3",
+    "jsdom": "~0.8.9"
   }
 }
